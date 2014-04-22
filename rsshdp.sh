@@ -11,7 +11,7 @@ if [ -z $1 ] ; then
 	DESKTOP="openbox-session"
 else
 ## Read settings from file
-	. "$1"
+	. "$@"
 fi
 
 ## Quit if any variable is empty
@@ -25,7 +25,7 @@ if [ ! -f `which Xephyr` ] ; then
 fi
 
 ## Start Xephyr window
-Xephyr -ac -screen "$SCREEN_SIZE" -reset :1 &
+Xephyr -ac -screen "$SCREEN_SIZE" -title "RSSHDP (CTRL+SHIFT grabs mouse and keyboard)" -reset :1 &
 
 ## Set display variable
 DISPLAY=":1"
