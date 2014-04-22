@@ -1,13 +1,18 @@
 #!/bin/bash
 
 ## Set session variables
-SSH_USER=""
-SSH_IP=""
-SSH_PORT="22"
+if [ -z $1 ] ; then
+	SSH_USER=""
+	SSH_IP=""
+	SSH_PORT="22"
 ## Set the screen size for the nested window. (keep it smaller than your desktop's screen settings!)
-SCREEN_SIZE="800x600"
+	SCREEN_SIZE="800x600"
 ## Set xsession (Use startkde, openbox-session, gnome-desktop, startlxde, etc.. Using 'startx' might fail due to user permissions)
-DESKTOP="openbox-session"
+	DESKTOP="openbox-session"
+else
+## Read settings from file
+	. "$1"
+fi
 
 ## Quit if any variable is empty
 set -e
