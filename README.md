@@ -54,3 +54,15 @@ you try to execute it for without YAD it will not work.
 
 Get YAD from the webupd8 PPA or from 
 http://sourceforge.net/projects/yad-dialog
+
+
+VPS
+---
+
+A VPS (Virtual Private Server) can be very handy when using rsshdp from behind a firewall.
+By using a public VPS you can have both the client and the server connect to the VPS to
+set-up the rsshdp session from there. 
+
+I can recommend [DigitalOcean's](https://www.digitalocean.com/?refcode=c6c9d017f04a) VPS service
+if you don't have one. They are easy to deploy (55sec) and can be payed by the hour so you only
+get billed for what you use or just keep em running for $5 a month.
