@@ -39,3 +39,18 @@ If you are using password authentication you need to type the password in the te
 The terminal window might be hidden behind the Xsession window.
 
 For your ease of use I recommend you set-up ssh keys with empty password.
+
+
+RSSHDP-CLIENT
+-------------
+
+The client application is used to set-up a reversed ssh tunnel to a server.
+This can be used for connecting to clients that are behind a firewall.
+The client will connect to a public server and forward it's ssh server to the
+remote server from where you can connect to it using RSSHDP.
+
+The client app depends on yad and xterm so make sure to install these befor
+you try to execute it for without YAD it will not work.
+
+Get YAD from the webupd8 PPA or from 
+http://sourceforge.net/projects/yad-dialog
